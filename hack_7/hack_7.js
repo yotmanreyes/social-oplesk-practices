@@ -10,5 +10,15 @@ let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
 
+for(let i = 0; i < arr.length; i++){
+
+    let currentString = arr[i].split("")
+        currentString[0] = currentString[0].toUpperCase()
+
+    let returnedString = currentString.join("")
+    
+    result.push(returnedString)
+}
+
 //export result
 module.exports = result;
