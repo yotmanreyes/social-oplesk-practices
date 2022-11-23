@@ -10,7 +10,21 @@
  */
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
+let currentString = "";
 
+for(let i = 0; i < arr.length; i++){
+    currentString = arr[i]
+   
+    if(currentString.indexOf('ba') > -1){
+        result.push(currentString.replace('a', '@'))
+    }
+    
+    if(currentString.indexOf('qux') > -1){
+        currentString = currentString.toUpperCase()
+        result.push(currentString)
+    }
+
+}
 
 //export result
 module.exports = result;
