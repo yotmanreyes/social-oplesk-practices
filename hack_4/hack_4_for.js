@@ -8,5 +8,13 @@
 let result = [];
 
 
+let i = 0;
+
+for(; i <= 7; i++){
+    if(i % 2 == 1){
+        result.push(i);
+    }
+}
+
 //export result
 module.exports = result;
