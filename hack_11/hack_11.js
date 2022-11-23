@@ -19,6 +19,32 @@ let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
+for(let i = 1; i <= numberArray.length; i++){
+    
+    (i == 1) ? result.push("h@ck") : ''
 
+    if(i % 2 == 1){
+        (i == 1) ? result.push('one') : '';
+        (i == 3) ? result.push('three') : '';
+        (i == 5) ? result.push('five') : '';
+    }else{
+        result.push(i)
+    }
+    
+    if(i == numberArray.length) 
+        result.push("h@ck")
+}
+
+for(let j = 0; j < stringArray.length; j++){
+
+    (stringArray[j] == 'foo') ? result.push('f00') : '';
+    (stringArray[j] == 'bar') ? result.push('Bar') : '';
+    (stringArray[j] == 'baz') ? result.push('b@z') : '';
+    (stringArray[j] == 'qux') ? result.push('quX') : '';
+    (stringArray[j] == 'echo') ? result.push('3ch0') : '';
+
+    if(j == (stringArray.length - 1)) 
+        result.push("h@ck")
+}
 //export result
 module.exports = result;
