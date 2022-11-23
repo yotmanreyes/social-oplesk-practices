@@ -8,7 +8,13 @@
  */
 let str = "fooziman";
 let result = [];
+let strToArray = str.split("")
 
+let i = 0;
+while( i <= strToArray.length){
+    result.push(strToArray[i])
+    i++
+}
 
 //export result
 module.exports = result;
